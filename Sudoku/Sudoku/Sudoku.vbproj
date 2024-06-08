@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D5B52BE-BDCE-4202-B9BB-8A4D597E96F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>Sudoku</RootNamespace>
+    <AssemblyName>Sudoku</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sudoku.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sudoku.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acceuil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acceuil.Designer.vb">
+      <DependentUpon>Acceuil.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleSauvegarde.vb" />
+    <Compile Include="ModuleSudoku.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Parametres.Designer.vb">
+      <DependentUpon>Parametres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partie.Designer.vb">
+      <DependentUpon>Partie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Partie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pause.Designer.vb">
+      <DependentUpon>Pause.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pause.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recapitulatif.Designer.vb">
+      <DependentUpon>Recapitulatif.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Recapitulatif.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regle.Designer.vb">
+      <DependentUpon>Regle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Regle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solution.Designer.vb">
+      <DependentUpon>Solution.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Solution.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SudokuGenerator.vb" />
+    <Compile Include="SudokuMasker.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Acceuil.resx">
+      <DependentUpon>Acceuil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres.resx">
+      <DependentUpon>Parametres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Partie.resx">
+      <DependentUpon>Partie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pause.resx">
+      <DependentUpon>Pause.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recapitulatif.resx">
+      <DependentUpon>Recapitulatif.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regle.resx">
+      <DependentUpon>Regle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solution.resx">
+      <DependentUpon>Solution.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\One-Piece-We-Are_-Instrumental.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SonActif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SonCoupé.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
