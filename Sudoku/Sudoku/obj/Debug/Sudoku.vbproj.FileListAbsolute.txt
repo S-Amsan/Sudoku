@@ -225,3 +225,57 @@ E:\BUT1\Periode D\R2.02 Dev. d'apps avec IHM\SAE 2.01\Sudoku\Sudoku\Sudoku\obj\D
 E:\BUT1\Periode D\R2.02 Dev. d'apps avec IHM\SAE 2.01\Sudoku\Sudoku\Sudoku\obj\Debug\Sudoku.exe
 E:\BUT1\Periode D\R2.02 Dev. d'apps avec IHM\SAE 2.01\Sudoku\Sudoku\Sudoku\obj\Debug\Sudoku.xml
 E:\BUT1\Periode D\R2.02 Dev. d'apps avec IHM\SAE 2.01\Sudoku\Sudoku\Sudoku\obj\Debug\Sudoku.pdb
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\bin\Debug\Sudoku.exe.config
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\bin\Debug\Sudoku.exe
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\bin\Debug\Sudoku.pdb
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\bin\Debug\Sudoku.xml
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.vbproj.AssemblyReference.cache
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Acceuil.resources
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Resources.resources
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Parametres.resources
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Partie.resources
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Pause.resources
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Recapitulatif.resources
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Regle.resources
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Solution.resources
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.vbproj.GenerateResource.cache
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.vbproj.CoreCompileInputs.cache
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.exe
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.xml
+C:\Users\alexandre.nguyen\Downloads\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.pdb
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\bin\Debug\Sudoku.exe.config
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\bin\Debug\Sudoku.exe
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\bin\Debug\Sudoku.pdb
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\bin\Debug\Sudoku.xml
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.vbproj.AssemblyReference.cache
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Acceuil.resources
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Resources.resources
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Parametres.resources
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Partie.resources
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Pause.resources
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Recapitulatif.resources
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Regle.resources
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Solution.resources
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.vbproj.GenerateResource.cache
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.vbproj.CoreCompileInputs.cache
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.exe
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.xml
+D:\Bureau\Sudoku-main (1)\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.pdb
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\bin\Debug\Sudoku.exe.config
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\bin\Debug\Sudoku.exe
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\bin\Debug\Sudoku.pdb
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\bin\Debug\Sudoku.xml
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.vbproj.AssemblyReference.cache
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Acceuil.resources
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Resources.resources
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Parametres.resources
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Partie.resources
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Pause.resources
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Recapitulatif.resources
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Regle.resources
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.Solution.resources
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.vbproj.GenerateResource.cache
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.vbproj.CoreCompileInputs.cache
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.exe
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.xml
+D:\Bureau\Sudoku-main\Sudoku\Sudoku\obj\Debug\Sudoku.pdb
