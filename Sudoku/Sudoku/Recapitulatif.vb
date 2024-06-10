@@ -13,7 +13,6 @@ Public Class Recapitulatif
             ComboBoxNomJoueur.Text = ComboBoxNomJoueur.GetItemText(0)
             JoueurSelectioner = getJoueur(ComboBoxNomJoueur.Text)
         End If
-
     End Sub
 
     Private Sub Recapitulatif_FormClosed(sender As Object, e As EventArgs) Handles MyBase.FormClosed

@@ -1,11 +1,11 @@
 ﻿Imports System.IO.Ports
-
 Public Class Acceuil
     Private fermetureConfirmee As Boolean = False
     Private musicActif As Boolean = True
     Private Sub Acceuil_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         actualiserPictureBoxSon()
         playOrStopMusic()
+
     End Sub
 
     Private Sub Partie_FormClosed(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing

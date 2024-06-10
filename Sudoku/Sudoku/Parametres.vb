@@ -35,6 +35,11 @@
         'la scrollbar a la meme valeur que les parametre
         HScrollBarDureeMax.Value = newParametres.dureeDeLaPartie \ 60
 
+        If newParametres.dureeDeLaPartie \ 60 = HScrollBarDureeMax.Minimum Then 'Lorsque la valeur est égale au min (n'appelle pas le value change)
+            LabelDureeMax.Text = tempstoString(newParametres.dureeDeLaPartie)
+            LabelDureeMax.ForeColor = Color.Red
+        End If
+
 
 
     End Sub
@@ -69,13 +74,12 @@
     Private Sub HScrollBarTempsMaximun_ValueChanged(sender As Object, e As EventArgs) Handles HScrollBarDureeMax.ValueChanged
         newParametres.dureeDeLaPartie = sender.value * 60
         LabelDureeMax.Text = tempstoString(newParametres.dureeDeLaPartie)
-
         'Modifie la couleur du label selon le temps 
         Select Case newParametres.dureeDeLaPartie \ 60
             Case 0 To 9 'expert
-                LabelDureeMax.ForeColor = Color.Black
-            Case 10 To 19 'Difficile
                 LabelDureeMax.ForeColor = Color.Red
+            Case 10 To 19 'Difficile
+                LabelDureeMax.ForeColor = Color.Orange
             Case 20 To 39 'Moyen
                 LabelDureeMax.ForeColor = Color.Yellow
             Case 40 To 59 'Facile

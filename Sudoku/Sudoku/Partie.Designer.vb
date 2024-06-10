@@ -41,30 +41,32 @@ Partial Class Partie
         Me.LabelChiffresATrouver = New System.Windows.Forms.Label()
         Me.LabelChiffresPasTrouvé = New System.Windows.Forms.Label()
         Me.PanelFondQuadrillage = New System.Windows.Forms.Panel()
-        Me.PictureBoxVie1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxVie2 = New System.Windows.Forms.PictureBox()
+        Me.PanelViesRestantes = New System.Windows.Forms.Panel()
+        Me.PictureBoxVie5 = New System.Windows.Forms.PictureBox()
         Me.PictureBoxVie3 = New System.Windows.Forms.PictureBox()
         Me.PictureBoxVie4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxVie5 = New System.Windows.Forms.PictureBox()
-        Me.PanelViesRestantes = New System.Windows.Forms.Panel()
-        Me.ButtonIndice = New System.Windows.Forms.Button()
+        Me.PictureBoxVie1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxVie2 = New System.Windows.Forms.PictureBox()
         Me.ButtonPause = New System.Windows.Forms.Button()
-        Me.PictureBoxMusicEnJeu = New System.Windows.Forms.PictureBox()
         Me.PanelPartieEnCours = New System.Windows.Forms.Panel()
+        Me.LabelIndice = New System.Windows.Forms.Label()
+        Me.PictureBoxIndice = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxMusicEnJeu = New System.Windows.Forms.PictureBox()
         Me.PanelMode.SuspendLayout()
-        CType(Me.PictureBoxVie1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxVie2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelViesRestantes.SuspendLayout()
+        CType(Me.PictureBoxVie5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxVie3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxVie4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxVie5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelViesRestantes.SuspendLayout()
-        CType(Me.PictureBoxMusicEnJeu, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxVie1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxVie2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelPartieEnCours.SuspendLayout()
+        CType(Me.PictureBoxIndice, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxMusicEnJeu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelMode
         '
-        Me.PanelMode.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PanelMode.BackColor = System.Drawing.Color.Transparent
         Me.PanelMode.Controls.Add(Me.LabelMode)
         Me.PanelMode.Controls.Add(Me.RadioButtonStylo)
         Me.PanelMode.Controls.Add(Me.RadioButtonCrayon)
@@ -107,6 +109,7 @@ Partial Class Partie
         'LabelNomJoueur
         '
         Me.LabelNomJoueur.AutoSize = True
+        Me.LabelNomJoueur.BackColor = System.Drawing.Color.Transparent
         Me.LabelNomJoueur.Location = New System.Drawing.Point(53, 9)
         Me.LabelNomJoueur.Name = "LabelNomJoueur"
         Me.LabelNomJoueur.Size = New System.Drawing.Size(61, 13)
@@ -115,9 +118,9 @@ Partial Class Partie
         '
         'ButtonRetour
         '
-        Me.ButtonRetour.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.ButtonRetour.BackColor = System.Drawing.Color.Transparent
         Me.ButtonRetour.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonRetour.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.ButtonRetour.ForeColor = System.Drawing.Color.Violet
         Me.ButtonRetour.Location = New System.Drawing.Point(313, 4)
         Me.ButtonRetour.Name = "ButtonRetour"
         Me.ButtonRetour.Size = New System.Drawing.Size(51, 23)
@@ -156,7 +159,7 @@ Partial Class Partie
         '
         'ButtonAbandonner
         '
-        Me.ButtonAbandonner.BackColor = System.Drawing.Color.OrangeRed
+        Me.ButtonAbandonner.BackColor = System.Drawing.Color.Transparent
         Me.ButtonAbandonner.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonAbandonner.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonAbandonner.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -170,6 +173,7 @@ Partial Class Partie
         'LabelTempsRestants
         '
         Me.LabelTempsRestants.AutoSize = True
+        Me.LabelTempsRestants.BackColor = System.Drawing.Color.Transparent
         Me.LabelTempsRestants.Location = New System.Drawing.Point(7, 33)
         Me.LabelTempsRestants.Name = "LabelTempsRestants"
         Me.LabelTempsRestants.Size = New System.Drawing.Size(80, 13)
@@ -179,6 +183,7 @@ Partial Class Partie
         'LabelJoueur
         '
         Me.LabelJoueur.AutoSize = True
+        Me.LabelJoueur.BackColor = System.Drawing.Color.Transparent
         Me.LabelJoueur.Location = New System.Drawing.Point(7, 9)
         Me.LabelJoueur.Name = "LabelJoueur"
         Me.LabelJoueur.Size = New System.Drawing.Size(48, 13)
@@ -187,10 +192,10 @@ Partial Class Partie
         '
         'ButtonParamètres
         '
-        Me.ButtonParamètres.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.ButtonParamètres.BackColor = System.Drawing.Color.Transparent
         Me.ButtonParamètres.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonParamètres.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonParamètres.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.ButtonParamètres.ForeColor = System.Drawing.Color.Gold
         Me.ButtonParamètres.Location = New System.Drawing.Point(370, 4)
         Me.ButtonParamètres.Name = "ButtonParamètres"
         Me.ButtonParamètres.Size = New System.Drawing.Size(102, 23)
@@ -201,6 +206,7 @@ Partial Class Partie
         'LabelChronometre
         '
         Me.LabelChronometre.AutoSize = True
+        Me.LabelChronometre.BackColor = System.Drawing.Color.Transparent
         Me.LabelChronometre.Location = New System.Drawing.Point(88, 33)
         Me.LabelChronometre.Name = "LabelChronometre"
         Me.LabelChronometre.Size = New System.Drawing.Size(43, 13)
@@ -209,10 +215,10 @@ Partial Class Partie
         '
         'ButtonLancer
         '
-        Me.ButtonLancer.BackColor = System.Drawing.Color.SpringGreen
+        Me.ButtonLancer.BackColor = System.Drawing.Color.Transparent
         Me.ButtonLancer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonLancer.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonLancer.ForeColor = System.Drawing.Color.Green
+        Me.ButtonLancer.ForeColor = System.Drawing.Color.Navy
         Me.ButtonLancer.Location = New System.Drawing.Point(10, 88)
         Me.ButtonLancer.Name = "ButtonLancer"
         Me.ButtonLancer.Size = New System.Drawing.Size(126, 35)
@@ -227,6 +233,7 @@ Partial Class Partie
         'LabelViesRestantes
         '
         Me.LabelViesRestantes.AutoSize = True
+        Me.LabelViesRestantes.BackColor = System.Drawing.Color.Transparent
         Me.LabelViesRestantes.Location = New System.Drawing.Point(7, 57)
         Me.LabelViesRestantes.Name = "LabelViesRestantes"
         Me.LabelViesRestantes.Size = New System.Drawing.Size(91, 13)
@@ -259,23 +266,27 @@ Partial Class Partie
         Me.PanelFondQuadrillage.Size = New System.Drawing.Size(325, 325)
         Me.PanelFondQuadrillage.TabIndex = 114
         '
-        'PictureBoxVie1
+        'PanelViesRestantes
         '
-        Me.PictureBoxVie1.Location = New System.Drawing.Point(22, 2)
-        Me.PictureBoxVie1.Name = "PictureBoxVie1"
-        Me.PictureBoxVie1.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBoxVie1.TabIndex = 115
-        Me.PictureBoxVie1.TabStop = False
-        Me.PictureBoxVie1.Tag = ""
+        Me.PanelViesRestantes.BackColor = System.Drawing.Color.Transparent
+        Me.PanelViesRestantes.Controls.Add(Me.PictureBoxVie5)
+        Me.PanelViesRestantes.Controls.Add(Me.PictureBoxVie3)
+        Me.PanelViesRestantes.Controls.Add(Me.PictureBoxVie4)
+        Me.PanelViesRestantes.Controls.Add(Me.PictureBoxVie1)
+        Me.PanelViesRestantes.Controls.Add(Me.PictureBoxVie2)
+        Me.PanelViesRestantes.Location = New System.Drawing.Point(101, 54)
+        Me.PanelViesRestantes.Name = "PanelViesRestantes"
+        Me.PanelViesRestantes.Size = New System.Drawing.Size(104, 24)
+        Me.PanelViesRestantes.TabIndex = 120
         '
-        'PictureBoxVie2
+        'PictureBoxVie5
         '
-        Me.PictureBoxVie2.Location = New System.Drawing.Point(2, 2)
-        Me.PictureBoxVie2.Name = "PictureBoxVie2"
-        Me.PictureBoxVie2.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBoxVie2.TabIndex = 116
-        Me.PictureBoxVie2.TabStop = False
-        Me.PictureBoxVie2.Tag = ""
+        Me.PictureBoxVie5.Location = New System.Drawing.Point(82, 2)
+        Me.PictureBoxVie5.Name = "PictureBoxVie5"
+        Me.PictureBoxVie5.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBoxVie5.TabIndex = 119
+        Me.PictureBoxVie5.TabStop = False
+        Me.PictureBoxVie5.Tag = ""
         '
         'PictureBoxVie3
         '
@@ -295,47 +306,30 @@ Partial Class Partie
         Me.PictureBoxVie4.TabStop = False
         Me.PictureBoxVie4.Tag = ""
         '
-        'PictureBoxVie5
+        'PictureBoxVie1
         '
-        Me.PictureBoxVie5.Location = New System.Drawing.Point(82, 2)
-        Me.PictureBoxVie5.Name = "PictureBoxVie5"
-        Me.PictureBoxVie5.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBoxVie5.TabIndex = 119
-        Me.PictureBoxVie5.TabStop = False
-        Me.PictureBoxVie5.Tag = ""
+        Me.PictureBoxVie1.Location = New System.Drawing.Point(22, 2)
+        Me.PictureBoxVie1.Name = "PictureBoxVie1"
+        Me.PictureBoxVie1.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBoxVie1.TabIndex = 115
+        Me.PictureBoxVie1.TabStop = False
+        Me.PictureBoxVie1.Tag = ""
         '
-        'PanelViesRestantes
+        'PictureBoxVie2
         '
-        Me.PanelViesRestantes.Controls.Add(Me.PictureBoxVie5)
-        Me.PanelViesRestantes.Controls.Add(Me.PictureBoxVie3)
-        Me.PanelViesRestantes.Controls.Add(Me.PictureBoxVie4)
-        Me.PanelViesRestantes.Controls.Add(Me.PictureBoxVie1)
-        Me.PanelViesRestantes.Controls.Add(Me.PictureBoxVie2)
-        Me.PanelViesRestantes.Location = New System.Drawing.Point(101, 54)
-        Me.PanelViesRestantes.Name = "PanelViesRestantes"
-        Me.PanelViesRestantes.Size = New System.Drawing.Size(104, 24)
-        Me.PanelViesRestantes.TabIndex = 120
-        '
-        'ButtonIndice
-        '
-        Me.ButtonIndice.BackColor = System.Drawing.Color.LightGray
-        Me.ButtonIndice.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonIndice.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonIndice.ForeColor = System.Drawing.Color.Gray
-        Me.ButtonIndice.Location = New System.Drawing.Point(11, 10)
-        Me.ButtonIndice.Name = "ButtonIndice"
-        Me.ButtonIndice.Size = New System.Drawing.Size(104, 23)
-        Me.ButtonIndice.TabIndex = 121
-        Me.ButtonIndice.Tag = ""
-        Me.ButtonIndice.Text = "Indice"
-        Me.ButtonIndice.UseVisualStyleBackColor = False
+        Me.PictureBoxVie2.Location = New System.Drawing.Point(2, 2)
+        Me.PictureBoxVie2.Name = "PictureBoxVie2"
+        Me.PictureBoxVie2.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBoxVie2.TabIndex = 116
+        Me.PictureBoxVie2.TabStop = False
+        Me.PictureBoxVie2.Tag = ""
         '
         'ButtonPause
         '
-        Me.ButtonPause.BackColor = System.Drawing.Color.Aqua
+        Me.ButtonPause.BackColor = System.Drawing.Color.Transparent
         Me.ButtonPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonPause.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonPause.ForeColor = System.Drawing.Color.DarkCyan
+        Me.ButtonPause.ForeColor = System.Drawing.Color.DarkGreen
         Me.ButtonPause.Location = New System.Drawing.Point(0, 232)
         Me.ButtonPause.Name = "ButtonPause"
         Me.ButtonPause.Size = New System.Drawing.Size(126, 35)
@@ -343,18 +337,12 @@ Partial Class Partie
         Me.ButtonPause.Text = "Pause"
         Me.ButtonPause.UseVisualStyleBackColor = False
         '
-        'PictureBoxMusicEnJeu
-        '
-        Me.PictureBoxMusicEnJeu.Location = New System.Drawing.Point(424, 33)
-        Me.PictureBoxMusicEnJeu.Name = "PictureBoxMusicEnJeu"
-        Me.PictureBoxMusicEnJeu.Size = New System.Drawing.Size(40, 40)
-        Me.PictureBoxMusicEnJeu.TabIndex = 127
-        Me.PictureBoxMusicEnJeu.TabStop = False
-        '
         'PanelPartieEnCours
         '
+        Me.PanelPartieEnCours.BackColor = System.Drawing.Color.Transparent
+        Me.PanelPartieEnCours.Controls.Add(Me.LabelIndice)
+        Me.PanelPartieEnCours.Controls.Add(Me.PictureBoxIndice)
         Me.PanelPartieEnCours.Controls.Add(Me.ButtonPause)
-        Me.PanelPartieEnCours.Controls.Add(Me.ButtonIndice)
         Me.PanelPartieEnCours.Controls.Add(Me.LabelChiffresPasTrouvé)
         Me.PanelPartieEnCours.Controls.Add(Me.LabelChiffresATrouver)
         Me.PanelPartieEnCours.Controls.Add(Me.PanelMode)
@@ -364,11 +352,40 @@ Partial Class Partie
         Me.PanelPartieEnCours.Size = New System.Drawing.Size(128, 325)
         Me.PanelPartieEnCours.TabIndex = 128
         '
+        'LabelIndice
+        '
+        Me.LabelIndice.AutoSize = True
+        Me.LabelIndice.Location = New System.Drawing.Point(46, 19)
+        Me.LabelIndice.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelIndice.Name = "LabelIndice"
+        Me.LabelIndice.Size = New System.Drawing.Size(83, 13)
+        Me.LabelIndice.TabIndex = 125
+        Me.LabelIndice.Text = "Nombre d'indice"
+        '
+        'PictureBoxIndice
+        '
+        Me.PictureBoxIndice.Location = New System.Drawing.Point(4, 6)
+        Me.PictureBoxIndice.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBoxIndice.Name = "PictureBoxIndice"
+        Me.PictureBoxIndice.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBoxIndice.TabIndex = 124
+        Me.PictureBoxIndice.TabStop = False
+        '
+        'PictureBoxMusicEnJeu
+        '
+        Me.PictureBoxMusicEnJeu.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBoxMusicEnJeu.Location = New System.Drawing.Point(424, 33)
+        Me.PictureBoxMusicEnJeu.Name = "PictureBoxMusicEnJeu"
+        Me.PictureBoxMusicEnJeu.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBoxMusicEnJeu.TabIndex = 127
+        Me.PictureBoxMusicEnJeu.TabStop = False
+        '
         'Partie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BackgroundImage = Global.Sudoku.My.Resources.Resources.Marineford
         Me.ClientSize = New System.Drawing.Size(484, 461)
         Me.Controls.Add(Me.PanelPartieEnCours)
         Me.Controls.Add(Me.PictureBoxMusicEnJeu)
@@ -389,15 +406,16 @@ Partial Class Partie
         Me.Text = "Partie"
         Me.PanelMode.ResumeLayout(False)
         Me.PanelMode.PerformLayout()
-        CType(Me.PictureBoxVie1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxVie2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelViesRestantes.ResumeLayout(False)
+        CType(Me.PictureBoxVie5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxVie3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxVie4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxVie5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PanelViesRestantes.ResumeLayout(False)
-        CType(Me.PictureBoxMusicEnJeu, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxVie1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxVie2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelPartieEnCours.ResumeLayout(False)
         Me.PanelPartieEnCours.PerformLayout()
+        CType(Me.PictureBoxIndice, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxMusicEnJeu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -427,8 +445,9 @@ Partial Class Partie
     Friend WithEvents PictureBoxVie4 As PictureBox
     Friend WithEvents PictureBoxVie5 As PictureBox
     Friend WithEvents PanelViesRestantes As Panel
-    Friend WithEvents ButtonIndice As Button
     Friend WithEvents ButtonPause As Button
     Friend WithEvents PictureBoxMusicEnJeu As PictureBox
     Friend WithEvents PanelPartieEnCours As Panel
+    Friend WithEvents PictureBoxIndice As PictureBox
+    Friend WithEvents LabelIndice As Label
 End Class

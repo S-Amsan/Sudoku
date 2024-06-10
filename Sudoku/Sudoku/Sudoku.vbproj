@@ -179,16 +179,68 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Marineford.webp" />
     <None Include="Resources\One-Piece-We-Are_-Instrumental.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Vie.png" />
+    <None Include="Resources\paysage.PNG" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SonActif.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SonCoupé.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marineford.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marineford %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\règle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\règle %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\règle %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\règle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\règle2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\règle %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\règle3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\score1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lampe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lampecoupé.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\param.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solution.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

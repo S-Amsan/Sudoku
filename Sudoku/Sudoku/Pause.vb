@@ -9,7 +9,6 @@
             If Vie.Tag >= Partie.getNbErreursRestantes() + 1 Then Vie.Hide()
         Next
         LabelChronometre.Text = tempstoString(Partie.getTempsRestant)
-
     End Sub
     Private Sub ButtonAbandonner_Click(sender As Object, e As EventArgs) Handles ButtonAbandonner.Click 'Le joueur peut abodonner depuis le form pause
         If MsgBox("Êtes-vous sûr de vouloir abandonner ?", vbYesNo) = vbYes Then
@@ -27,5 +26,6 @@
         Partie.Show()
         Partie.Chronomètre.Start() 'On redemarre le chronometre
     End Sub
+
 
 End Class

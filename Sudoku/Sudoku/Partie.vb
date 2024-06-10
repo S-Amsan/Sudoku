@@ -28,7 +28,6 @@ Public Class Partie
 
     Private Sub Partie_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         joueurActuelle = getJoueur(Acceuil.ComboBoxJoueur.Text)
-
         Dim CouleurCase As Color
         'Ajoute les textbox dans TableLayoutPanel
         For ligne As Integer = 0 To Dimensions - 1
@@ -59,8 +58,8 @@ Public Class Partie
 
         ' Paramètres du joueurs
         parametresPartie = getParametres(joueurActuelle.id)
-        ButtonIndice.Tag = 3 ' Le joueurs possède 3 indices
-        ButtonIndice.Text = "Indice x " & ButtonIndice.Tag ' On affiche 
+        PictureBoxIndice.Tag = 3 'Le joueur possède 3 indices
+        LabelIndice.Text = "X" & PictureBoxIndice.Tag ' On affiche 
         actualiserParametres() 'L'affichage dans la partie
 
         ' Action qu'on ne peut pas faire avant le lancement de la partie:
@@ -86,6 +85,7 @@ Public Class Partie
             Vie.Tag = Id 'On met des tag different pour chaque vie, ceux qui nous permettra ensuite de les enlever 1 par 1 en cas d'erreur
             Id -= 1
         Next
+        PictureBoxIndice.Image = My.Resources.lampecoupé 'On initialise l'image de l'indice 
         actualiserPictureBoxSon() ' On affiche la bonne image
         actualiserChiffreATrouver() ' On actualise les chiffres a trouver
     End Sub
@@ -192,9 +192,13 @@ Public Class Partie
         TableLayoutPanelQuadrillage.Enabled = True 'Le sudoku est visible
         PanelPartieEnCours.Show()
         PanelPartieEnCours.Enabled = True
+        Dim nouvelleOpacite As Double = 0.6
+        PanelPartieEnCours.BackColor = Color.White
+        PanelPartieEnCours.BackColor = Color.FromArgb(CInt(nouvelleOpacite * 255), PanelPartieEnCours.BackColor.R, PanelPartieEnCours.BackColor.G, PanelPartieEnCours.BackColor.B)
+
         If Not parametresPartie.indiceActive Then
-            ButtonIndice.Hide()
-            ButtonIndice.Enabled = False
+            PictureBoxIndice.Hide()
+            PictureBoxIndice.Enabled = False
         End If
 
         ' Simule un click sur la texbox
@@ -203,19 +207,6 @@ Public Class Partie
         RadioButtonStylo.PerformClick()
     End Sub
 
-    Private Sub ButtonIndice_Click(sender As Object, e As EventArgs) Handles ButtonIndice.Click 'L'utilisation d'un indice
-        indiceActif = Not indiceActif 'Inverse la valeur du boolean, permet au joueur d'annuler l'indice
-        If indiceActif AndAlso sender.Tag > 0 Then
-            sender.ForeColor = Color.Gold
-            sender.BackColor = Color.Yellow
-        ElseIf sender.Tag > 0 Then
-            ButtonIndice.ForeColor = Color.Gray
-            ButtonIndice.BackColor = Color.LightGray
-        Else
-            MsgBox("Vous n'avez plus d'indice")
-            indiceActif = False
-        End If
-    End Sub
     Private Sub ButtonPause_Click(sender As Object, e As EventArgs) Handles ButtonPause.Click ' Met en pause le jeu 
         Me.Hide()
         Pause.Show()
@@ -265,11 +256,10 @@ Public Class Partie
             retirerNoteCrayon(reponse.ToString())
             colorier(reponse)
             textBoxSelectionner.BackColor = Color.Yellow
-            ButtonIndice.Tag -= 1
-            ButtonIndice.Text = "Indice x " & ButtonIndice.Tag
-            'On remet les couleur d'avant
-            ButtonIndice.ForeColor = Color.Gray
-            ButtonIndice.BackColor = Color.LightGray
+            PictureBoxIndice.Image = My.Resources.lampecoupé
+            PictureBoxIndice.Tag -= 1
+            LabelIndice.Text = "X" & PictureBoxIndice.Tag
+
 
             If sudokuRempli() Then ' Si le joueur a complété le Sudoku
                 victoire()
@@ -522,5 +512,19 @@ Public Class Partie
 
         Return True
     End Function
+
+    Private Sub PictureBoxIndice_Click(sender As Object, e As EventArgs) Handles PictureBoxIndice.Click
+        indiceActif = Not indiceActif 'Inverse la valeur du boolean, permet au joueur d'annuler l'indice
+        If indiceActif AndAlso sender.Tag > 0 Then
+            PictureBoxIndice.Image = My.Resources.lampe
+        ElseIf sender.Tag > 0 Then
+            PictureBoxIndice.Image = My.Resources.lampecoupé
+        Else
+            MsgBox("Vous n'avez plus d'indice")
+            indiceActif = False
+        End If
+    End Sub
+
+
 
 End Class

@@ -169,6 +169,18 @@ Module ModuleSudoku
         End If
     End Sub
 
+    'Permet d'avoir des panels transparents
+    Public Class FormLisible '
+        Inherits Form
+        Protected Overrides ReadOnly Property CreateParams As CreateParams
+            Get
+                Dim crp As CreateParams = MyBase.CreateParams
+                crp.ExStyle = crp.ExStyle Or &H20
+                Return crp
+            End Get
+        End Property
+    End Class
+
     'Le Main:
     Sub Main()
         ReDim tabJoueur(0)
